@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="常用API1.API概述​        API (Application Programming Interface) ：应用程序编程接口 2.Math2.1Math类概述 Math包含执行基本数学运算的方法  2.2Math中方法的调用方式 Math类中无构造方法，但内部的方法都是静态的，则可以通过**类名.**进行调用.  2.3Math类的常用方法   方法名 说明    public s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2020/09/01/01%E5%B8%B8%E7%94%A8API/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="常用API1.API概述​        API (Application Programming Interface) ：应用程序编程接口 2.Math2.1Math类概述 Math包含执行基本数学运算的方法  2.2Math中方法的调用方式 Math类中无构造方法，但内部的方法都是静态的，则可以通过**类名.**进行调用.  2.3Math类的常用方法   方法名 说明    public s">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-01T07:54:09.642Z">
+<meta property="article:modified_time" content="2020-09-01T15:44:07.923Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-01常用API" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/01/01%E5%B8%B8%E7%94%A8API/" class="article-date">
+  <time datetime="2020-09-01T07:54:09.642Z" itemprop="datePublished">2020-09-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="常用API"><a href="#常用API" class="headerlink" title="常用API"></a>常用API</h1><h2 id="1-API概述"><a href="#1-API概述" class="headerlink" title="1.API概述"></a>1.API概述</h2><p>​        API (Application Programming Interface) ：应用程序编程接口</p>
+<h2 id="2-Math"><a href="#2-Math" class="headerlink" title="2.Math"></a>2.Math</h2><h3 id="2-1Math类概述"><a href="#2-1Math类概述" class="headerlink" title="2.1Math类概述"></a>2.1Math类概述</h3><ul>
+<li>Math包含执行基本数学运算的方法</li>
+</ul>
+<h3 id="2-2Math中方法的调用方式"><a href="#2-2Math中方法的调用方式" class="headerlink" title="2.2Math中方法的调用方式"></a>2.2Math中方法的调用方式</h3><ul>
+<li>Math类中无构造方法，但内部的方法都是静态的，则可以通过**类名.**进行调用.</li>
+</ul>
+<h3 id="2-3Math类的常用方法"><a href="#2-3Math类的常用方法" class="headerlink" title="2.3Math类的常用方法"></a>2.3Math类的常用方法</h3><table>
+<thead>
+<tr>
+<th align="left">方法名</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">public static int abs (int a)</td>
+<td align="left">返回参数的绝对值</td>
+</tr>
+<tr>
+<td align="left">public static double ceil(double a)</td>
+<td align="left">向上取整(ceil越来越高)</td>
+</tr>
+<tr>
+<td align="left">public static double floor(double a)</td>
+<td align="left">向下取整(floor越来越低)</td>
+</tr>
+<tr>
+<td align="left">public static int round(float a)</td>
+<td align="left">四舍五入</td>
+</tr>
+<tr>
+<td align="left">public static int max(int a,int b)</td>
+<td align="left">求最大值</td>
+</tr>
+<tr>
+<td align="left">public static int min(int a,int b)</td>
+<td align="left">求最小值</td>
+</tr>
+<tr>
+<td align="left">public static double pow(double a,double b)</td>
+<td align="left">求a的b次幂</td>
+</tr>
+<tr>
+<td align="left">public static double random()</td>
+<td align="left">返回一个随机数[0.0,1.0)</td>
+</tr>
+</tbody></table>
+<h2 id="3-System类的常用方法"><a href="#3-System类的常用方法" class="headerlink" title="3.System类的常用方法"></a>3.System类的常用方法</h2><table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public static void exit(int status)</td>
+<td>终止当前运行的java虚拟机，非零表示异常终止</td>
+</tr>
+<tr>
+<td>public static long currentTimeMillis()</td>
+<td>返回当前时间距离元时间经过了多少毫秒</td>
+</tr>
+<tr>
+<td>public static void arraycopy(src,srcPos,dest,destPos,length)</td>
+<td>将指定源数组中的数组从指定位置复制到目标数组的指定位置</td>
+</tr>
+</tbody></table>
+<h2 id="4-Objects类的常用方法"><a href="#4-Objects类的常用方法" class="headerlink" title="4.Objects类的常用方法"></a>4.Objects类的常用方法</h2><table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public static String toString(对象)</td>
+<td>返回参数中对象的字符串表示形式。</td>
+</tr>
+<tr>
+<td>public static String toString(对象, 默认字符串)</td>
+<td>返回对象的字符串表示形式。(如果对象为空，则返回默认字符串)</td>
+</tr>
+<tr>
+<td>public static Boolean isNull(对象)</td>
+<td>判断对象是否为空</td>
+</tr>
+<tr>
+<td>public static Boolean nonNull(对象)</td>
+<td>判断对象是否不为空</td>
+</tr>
+</tbody></table>
+<h2 id="5-BigDecimal"><a href="#5-BigDecimal" class="headerlink" title="5.BigDecimal"></a>5.BigDecimal</h2><ul>
+<li><p>作用</p>
+<p>可以用来进行精确计算</p>
+</li>
+<li><p>构造方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BigDecimal(double val)</td>
+<td>参数为double</td>
+</tr>
+<tr>
+<td>BigDecimal(String val)</td>
+<td>参数为String(推荐)</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>常用方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public BigDecimal add(另一个BigDecimal对象)</td>
+<td>加法</td>
+</tr>
+<tr>
+<td>public BigDecimal subtract(另一个BigDecimal对象)</td>
+<td>减法</td>
+</tr>
+<tr>
+<td>public BigDecimal multiply(另一个BigDecimal对象)</td>
+<td>乘法</td>
+</tr>
+<tr>
+<td>public BigDecimal divide(另一个BigDecimal对象)</td>
+<td>除法1</td>
+</tr>
+<tr>
+<td>public BigDecimal divide(另一个BigDecimal对象,精确几位,舍入模式)</td>
+<td>除法2</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>总结</p>
+</li>
+</ul>
+<ol>
+<li>BigDecimal是用来进行精确计算的</li>
+<li>创建BigDecimal的对象，构造方法使用参数类型为字符串的。</li>
+<li>四则运算中的除法，如果除不尽请使用divide的三个参数的方法。</li>
+</ol>
+<p>代码示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">BigDecimal divide = bd1.divide(参与运算的对象,小数点后精确到多少位,舍入模式);</span><br><span class="line">参数<span class="number">1</span> ，表示参与运算的BigDecimal对象。</span><br><span class="line">参数<span class="number">2</span> ，表示小数点后面精确到多少位</span><br><span class="line">参数<span class="number">3</span> ，舍入模式  </span><br><span class="line">  BigDecimal.ROUND_UP  进一法</span><br><span class="line">  BigDecimal.ROUND_FLOOR 去尾法</span><br><span class="line">  BigDecimal.ROUND_HALF_UP 四舍五入</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-包装类"><a href="#6-包装类" class="headerlink" title="6.包装类"></a>6.包装类</h2><h3 id="6-1基本类型包装类"><a href="#6-1基本类型包装类" class="headerlink" title="6.1基本类型包装类"></a>6.1基本类型包装类</h3><ul>
+<li><p>基本类型包装类的作用</p>
+<p>将基本数据类型封装成对象的好处在于可以在对象中定义更多的功能方法操作该数据</p>
+<p>常用的操作之一：用于基本数据类型与字符串之间的转换</p>
+</li>
+<li><p>基本类型对应的包装类</p>
+<table>
+<thead>
+<tr>
+<th>基本数据类型</th>
+<th>包装类</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Boolean</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="6-2Integer类"><a href="#6-2Integer类" class="headerlink" title="6.2Integer类"></a>6.2Integer类</h3><ul>
+<li><p>Integer类概述</p>
+<p>包装一个对象中的原始类型 int 的值</p>
+</li>
+<li><p>Integer类构造方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public Integer(int   value)</td>
+<td>根据 int 值创建 Integer 对象(过时)</td>
+</tr>
+<tr>
+<td>public Integer(String s)</td>
+<td>根据 String 值创建 Integer 对象(过时)</td>
+</tr>
+<tr>
+<td>public static Integer valueOf(int i)</td>
+<td>返回表示指定的 int 值的 Integer   实例</td>
+</tr>
+<tr>
+<td>public static Integer valueOf(String s)</td>
+<td>返回一个保存指定值的 Integer 对象 String</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="6-3自动拆箱和自动装箱"><a href="#6-3自动拆箱和自动装箱" class="headerlink" title="6.3自动拆箱和自动装箱"></a>6.3自动拆箱和自动装箱</h3><ul>
+<li><p>自动装箱</p>
+<p>把基本数据类型转换为对应的包装类类型</p>
+</li>
+<li><p>自动拆箱</p>
+<p>把包装类类型转换为对应的基本数据类型</p>
+</li>
+</ul>
+<h3 id="6-4int和String类型的相互转换"><a href="#6-4int和String类型的相互转换" class="headerlink" title="6.4int和String类型的相互转换"></a>6.4int和String类型的相互转换</h3><ul>
+<li><p>int转换成String</p>
+<ul>
+<li>转换方式<ul>
+<li>方式一：直接在数字后加一个空字符串</li>
+<li>方式二：通过String类静态方法valueOf()</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>String转换为int</p>
+<ul>
+<li>转换方式<ul>
+<li>方式一：先将字符串数字转成Integer，再调用valueOf()方法</li>
+<li>方式二：通过Integer静态方法parseInt()进行转换</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-递归"><a href="#7-递归" class="headerlink" title="7.递归"></a>7.递归</h2><ul>
+<li>递归的介绍<ul>
+<li>以编程的角度来看，递归指的是方法定义中调用方法本身的现象</li>
+<li>把一个复杂的问题层层转化为一个与原问题相似的规模较小的问题来求解</li>
+<li>递归策略只需少量的程序就可描述出解题过程所需要的多次重复计算</li>
+</ul>
+</li>
+<li>递归的注意事项<ul>
+<li>递归一定要有出口。否则内存溢出</li>
+<li>递归虽然有出口，但是递归的次数也不宜过多。否则内存溢出</li>
+</ul>
+</li>
+</ul>
+<h2 id="8-jdk8之前的时间日期类"><a href="#8-jdk8之前的时间日期类" class="headerlink" title="8.jdk8之前的时间日期类"></a>8.jdk8之前的时间日期类</h2><h3 id="8-1Date类"><a href="#8-1Date类" class="headerlink" title="8.1Date类"></a>8.1Date类</h3><ul>
+<li><p>计算机中时间原点</p>
+<p>1970年1月1日00:00:00</p>
+</li>
+<li><p>时间换算单位</p>
+<p>1秒=1000毫秒</p>
+</li>
+<li><p>Date类概述</p>
+<p>Date代表了一个特定的时间，精确到毫秒</p>
+</li>
+<li><p>Date类的构造方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public Date()</td>
+<td>分配一个 Date对象，并初始化，以便它代表它被分配的时间，精确到毫秒</td>
+</tr>
+<tr>
+<td>public Date(long date)</td>
+<td>分配一个 Date对象，并将其初始化为表示从标准基准时间起指定的毫秒数</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>Date类常用方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public long getTime()</td>
+<td>获取的是日期对象从1970年1月1日 00:00:00到现在的毫秒值</td>
+</tr>
+<tr>
+<td>public void setTime(long time)</td>
+<td>设置时间，给的是毫秒值</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="8-2SimpleDateFormat类"><a href="#8-2SimpleDateFormat类" class="headerlink" title="8.2SimpleDateFormat类"></a>8.2SimpleDateFormat类</h3><ul>
+<li><p>SimpleDateFormat类概述</p>
+<p>SimpleDateFormat是一个具体的类，用于以区域设置敏感的方式格式化和解析日期。</p>
+</li>
+<li><p>SimpleDateFormat类构造方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public   SimpleDateFormat()</td>
+<td>构造一个SimpleDateFormat，使用默认模式和日期格式</td>
+</tr>
+<tr>
+<td>public SimpleDateFormat(String pattern)</td>
+<td>构造一个SimpleDateFormat使用给定的模式和默认的日期格式</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>SimpleDateFormat类的常用方法</p>
+<ul>
+<li>格式化(从Date到String)<ul>
+<li>public final String format(Date date)：将日期格式化成日期/时间字符串</li>
+</ul>
+</li>
+<li>解析(从String到Date)<ul>
+<li>public Date parse(String source)：从给定字符串的开始解析文本以生成日期</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="9-jdk8之后的时间日期类"><a href="#9-jdk8之后的时间日期类" class="headerlink" title="9.jdk8之后的时间日期类"></a>9.jdk8之后的时间日期类</h2><h3 id="9-1jdk8新增日期类"><a href="#9-1jdk8新增日期类" class="headerlink" title="9.1jdk8新增日期类"></a>9.1jdk8新增日期类</h3><ul>
+<li>LocalDate    表示日期（年月日）</li>
+<li>LocalTime    表示时间（时分秒）</li>
+<li>LocalDateTime    表示时间+日期（年月日时分秒）</li>
+</ul>
+<h3 id="9-2LocalDateTime创建方法"><a href="#9-2LocalDateTime创建方法" class="headerlink" title="9.2LocalDateTime创建方法"></a>9.2LocalDateTime创建方法</h3><ul>
+<li><p>方法说明</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public static LocalDateTime now()</td>
+<td>获取当前系统时间</td>
+</tr>
+<tr>
+<td>public static LocalDateTime of  (年, 月 , 日, 时, 分, 秒)</td>
+<td>使用指定年月日和时分秒初始化一个LocalDateTime对象</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="9-3LocalDateTime获取方法"><a href="#9-3LocalDateTime获取方法" class="headerlink" title="9.3LocalDateTime获取方法"></a>9.3LocalDateTime获取方法</h3><ul>
+<li><p>方法说明</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public int getYear()</td>
+<td>获取年</td>
+</tr>
+<tr>
+<td>public int getMonthValue()</td>
+<td>获取月份（1-12）</td>
+</tr>
+<tr>
+<td>public int getDayOfMonth()</td>
+<td>获取月份中的第几天（1-31）</td>
+</tr>
+<tr>
+<td>public int getDayOfYear()</td>
+<td>获取一年中的第几天（1-366）</td>
+</tr>
+<tr>
+<td>public DayOfWeek getDayOfWeek()</td>
+<td>获取星期</td>
+</tr>
+<tr>
+<td>public int getMinute()</td>
+<td>获取分钟</td>
+</tr>
+<tr>
+<td>public int getHour()</td>
+<td>获取小时</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="9-4LocalDateTime转换方法"><a href="#9-4LocalDateTime转换方法" class="headerlink" title="9.4LocalDateTime转换方法"></a>9.4LocalDateTime转换方法</h3><ul>
+<li><p>方法说明</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public LocalDate  toLocalDate ()</td>
+<td>转换成为一个LocalDate对象</td>
+</tr>
+<tr>
+<td>public LocalTime toLocalTime ()</td>
+<td>转换成为一个LocalTime对象</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="9-5LocalDateTime格式化和解析"><a href="#9-5LocalDateTime格式化和解析" class="headerlink" title="9.5LocalDateTime格式化和解析"></a>9.5LocalDateTime格式化和解析</h3><ul>
+<li><p>方法说明</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public String format (指定格式)</td>
+<td>把一个LocalDateTime格式化成为一个字符串</td>
+</tr>
+<tr>
+<td>public LocalDateTime parse (准备解析的字符串, 解析格式)</td>
+<td>把一个日期字符串解析成为一个LocalDateTime对象</td>
+</tr>
+<tr>
+<td>public static DateTimeFormatter ofPattern(String pattern)</td>
+<td>使用指定的日期模板获取一个日期格式化器DateTimeFormatter对象</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="9-6LocalDateTime增加或者减少时间的方法"><a href="#9-6LocalDateTime增加或者减少时间的方法" class="headerlink" title="9.6LocalDateTime增加或者减少时间的方法"></a>9.6LocalDateTime增加或者减少时间的方法</h3><ul>
+<li><p>方法说明</p>
+<p>①</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public LocalDateTime plusYears (long years)</td>
+<td>添加或者减去年</td>
+</tr>
+<tr>
+<td>public LocalDateTime plusMonths(long months)</td>
+<td>添加或者减去月</td>
+</tr>
+<tr>
+<td>public LocalDateTime plusDays(long days)</td>
+<td>添加或者减去日</td>
+</tr>
+<tr>
+<td>public LocalDateTime plusHours(long hours)</td>
+<td>添加或者减去时</td>
+</tr>
+<tr>
+<td>public LocalDateTime plusMinutes(long minutes)</td>
+<td>添加或者减去分</td>
+</tr>
+<tr>
+<td>public LocalDateTime plusSeconds(long seconds)</td>
+<td>添加或者减去秒</td>
+</tr>
+<tr>
+<td>public LocalDateTime plusWeeks(long weeks)</td>
+<td>添加或者减去周</td>
+</tr>
+</tbody></table>
+<p>②</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public LocalDateTime  minusYears (long years)</td>
+<td>减去或者添加年</td>
+</tr>
+<tr>
+<td>public LocalDateTime  minusMonths(long months)</td>
+<td>减去或者添加月</td>
+</tr>
+<tr>
+<td>public LocalDateTime minusDays(long days)</td>
+<td>减去或者添加日</td>
+</tr>
+<tr>
+<td>public LocalDateTime minusHours(long hours)</td>
+<td>减去或者添加时</td>
+</tr>
+<tr>
+<td>public LocalDateTime minusMinutes(long minutes)</td>
+<td>减去或者添加分</td>
+</tr>
+<tr>
+<td>public LocalDateTime minusSeconds(long seconds)</td>
+<td>减去或者添加秒</td>
+</tr>
+<tr>
+<td>public LocalDateTime minusWeeks(long weeks)</td>
+<td>减去或者添加周</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="9-7LocalDateTime修改方法"><a href="#9-7LocalDateTime修改方法" class="headerlink" title="9.7LocalDateTime修改方法"></a>9.7LocalDateTime修改方法</h3><ul>
+<li><p>方法说明</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public LocalDateTime withYear(int year)</td>
+<td>直接修改年</td>
+</tr>
+<tr>
+<td>public LocalDateTime withMonth(int month)</td>
+<td>直接修改月</td>
+</tr>
+<tr>
+<td>public LocalDateTime withDayOfMonth(int dayofmonth)</td>
+<td>直接修改日期(一个月中的第几天)</td>
+</tr>
+<tr>
+<td>public LocalDateTime withDayOfYear(int dayOfYear)</td>
+<td>直接修改日期(一年中的第几天)</td>
+</tr>
+<tr>
+<td>public LocalDateTime withHour(int hour)</td>
+<td>直接修改小时</td>
+</tr>
+<tr>
+<td>public LocalDateTime withMinute(int minute)</td>
+<td>直接修改分钟</td>
+</tr>
+<tr>
+<td>public LocalDateTime withSecond(int second)</td>
+<td>直接修改秒</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="9-8Period"><a href="#9-8Period" class="headerlink" title="9.8Period"></a>9.8Period</h3><ul>
+<li><p>方法说明</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public static Period between(开始时间,结束时间)</td>
+<td>计算两个“时间”的间隔</td>
+</tr>
+<tr>
+<td>public int getYears()</td>
+<td>获得这段时间的年数</td>
+</tr>
+<tr>
+<td>public int getMonths()</td>
+<td>获得此期间的总月数</td>
+</tr>
+<tr>
+<td>public int getDays()</td>
+<td>获得此期间的天数</td>
+</tr>
+<tr>
+<td>public long toTotalMonths()</td>
+<td>获取此期间的总月数</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>示例代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  计算两个时间的间隔</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JDK8DateDemo9</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//public static Period between(开始时间,结束时间)  计算两个&quot;时间&quot;的间隔</span></span><br><span class="line"></span><br><span class="line">        LocalDate localDate1 = LocalDate.of(<span class="number">2020</span>, <span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line">        LocalDate localDate2 = LocalDate.of(<span class="number">2048</span>, <span class="number">12</span>, <span class="number">12</span>);</span><br><span class="line">        Period period = Period.between(localDate1, localDate2);</span><br><span class="line">        System.out.println(period);<span class="comment">//P28Y11M11D</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//public int getYears()         获得这段时间的年数</span></span><br><span class="line">        System.out.println(period.getYears());<span class="comment">//28</span></span><br><span class="line">        <span class="comment">//public int getMonths()        获得此期间的月数</span></span><br><span class="line">        System.out.println(period.getMonths());<span class="comment">//11</span></span><br><span class="line">        <span class="comment">//public int getDays()          获得此期间的天数</span></span><br><span class="line">        System.out.println(period.getDays());<span class="comment">//11</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//public long toTotalMonths()   获取此期间的总月数</span></span><br><span class="line">        System.out.println(period.toTotalMonths());<span class="comment">//347</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="9-9Duration"><a href="#9-9Duration" class="headerlink" title="9.9Duration"></a>9.9Duration</h3><ul>
+<li><p>方法说明</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public static Duration  between(开始时间,结束时间)</td>
+<td>计算两个“时间”的间隔</td>
+</tr>
+<tr>
+<td>public long toSeconds()</td>
+<td>获得此时间间隔的秒</td>
+</tr>
+<tr>
+<td>public int toMillis()</td>
+<td>获得此时间间隔的毫秒</td>
+</tr>
+<tr>
+<td>public int toNanos()</td>
+<td>获得此时间间隔的纳秒</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>示例代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  计算两个时间的间隔</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JDK8DateDemo10</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//public static Duration between(开始时间,结束时间)  计算两个“时间&quot;的间隔</span></span><br><span class="line"></span><br><span class="line">        LocalDateTime localDateTime1 = LocalDateTime.of(<span class="number">2020</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">15</span>);</span><br><span class="line">        LocalDateTime localDateTime2 = LocalDateTime.of(<span class="number">2020</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>);</span><br><span class="line">        Duration duration = Duration.between(localDateTime1, localDateTime2);</span><br><span class="line">        System.out.println(duration);<span class="comment">//PT21H57M58S</span></span><br><span class="line">        <span class="comment">//public long toSeconds()	       获得此时间间隔的秒</span></span><br><span class="line">        System.out.println(duration.toSeconds());<span class="comment">//79078</span></span><br><span class="line">        <span class="comment">//public int toMillis()	           获得此时间间隔的毫秒</span></span><br><span class="line">        System.out.println(duration.toMillis());<span class="comment">//79078000</span></span><br><span class="line">        <span class="comment">//public int toNanos()             获得此时间间隔的纳秒</span></span><br><span class="line">        System.out.println(duration.toNanos());<span class="comment">//79078000000000</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/09/01/01%E5%B8%B8%E7%94%A8API/" data-id="ckekogehu0001n4l16z7m9o6b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/09/02/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/09/02/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/01/01%E5%B8%B8%E7%94%A8API/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
