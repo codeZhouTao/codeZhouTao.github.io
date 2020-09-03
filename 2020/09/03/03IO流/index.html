@@ -8,17 +8,19 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="常用API1.API概述​        API (Application Programming Interface) ：应用程序编程接口 2.Math2.1Math类概述 Math包含执行基本数学运算的方法  2.2Math中方法的调用方式 Math类中无构造方法，但内部的方法都是静态的，则可以通过**类名.**进行调用.  2.3Math类的常用方法   方法名 说明    public s">
+  <meta name="description" content="IO流1.File类1.1File类概述和构造方法 File类介绍  它是文件和目录路径名的抽现象表示 文件和目录是可以通过File封装成对象的 对于File而言，其封装的并不是一个真正存在的文件，仅仅是一个路径名而已，它可以是存在的，也可以是不存在的，将来是要通过具体的操作把这个路径的内容转换为具体存在的   File类的构造方法    方法名 说明    File(String   pathn">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2020/09/01/01%E5%B8%B8%E7%94%A8API/index.html">
+<meta property="og:url" content="http://example.com/2020/09/03/03IO%E6%B5%81/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="常用API1.API概述​        API (Application Programming Interface) ：应用程序编程接口 2.Math2.1Math类概述 Math包含执行基本数学运算的方法  2.2Math中方法的调用方式 Math类中无构造方法，但内部的方法都是静态的，则可以通过**类名.**进行调用.  2.3Math类的常用方法   方法名 说明    public s">
+<meta property="og:description" content="IO流1.File类1.1File类概述和构造方法 File类介绍  它是文件和目录路径名的抽现象表示 文件和目录是可以通过File封装成对象的 对于File而言，其封装的并不是一个真正存在的文件，仅仅是一个路径名而已，它可以是存在的，也可以是不存在的，将来是要通过具体的操作把这个路径的内容转换为具体存在的   File类的构造方法    方法名 说明    File(String   pathn">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-01T07:54:09.642Z">
-<meta property="article:modified_time" content="2020-09-01T15:44:07.923Z">
+<meta property="og:image" content="e:/blog/source_posts/img/01_IO流小结.png">
+<meta property="article:published_time" content="2020-09-03T05:53:45.474Z">
+<meta property="article:modified_time" content="2020-09-03T13:12:43.264Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="e:/blog/source_posts/img/01_IO流小结.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,59 +156,21 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-01常用API" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-03IO流" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="常用API"><a href="#常用API" class="headerlink" title="常用API"></a>常用API</h1><h2 id="1-API概述"><a href="#1-API概述" class="headerlink" title="1.API概述"></a>1.API概述</h2><p>​        API (Application Programming Interface) ：应用程序编程接口</p>
-<h2 id="2-Math"><a href="#2-Math" class="headerlink" title="2.Math"></a>2.Math</h2><h3 id="2-1Math类概述"><a href="#2-1Math类概述" class="headerlink" title="2.1Math类概述"></a>2.1Math类概述</h3><ul>
-<li>Math包含执行基本数学运算的方法</li>
+        <h1 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h1><h2 id="1-File类"><a href="#1-File类" class="headerlink" title="1.File类"></a>1.File类</h2><h3 id="1-1File类概述和构造方法"><a href="#1-1File类概述和构造方法" class="headerlink" title="1.1File类概述和构造方法"></a>1.1File类概述和构造方法</h3><ul>
+<li><p>File类介绍</p>
+<ul>
+<li>它是文件和目录路径名的抽现象表示</li>
+<li>文件和目录是可以通过File封装成对象的</li>
+<li>对于File而言，其封装的并不是一个真正存在的文件，仅仅是一个路径名而已，它可以是存在的，也可以是不存在的，将来是要通过具体的操作把这个路径的内容转换为具体存在的</li>
 </ul>
-<h3 id="2-2Math中方法的调用方式"><a href="#2-2Math中方法的调用方式" class="headerlink" title="2.2Math中方法的调用方式"></a>2.2Math中方法的调用方式</h3><ul>
-<li>Math类中无构造方法，但内部的方法都是静态的，则可以通过**类名.**进行调用.</li>
-</ul>
-<h3 id="2-3Math类的常用方法"><a href="#2-3Math类的常用方法" class="headerlink" title="2.3Math类的常用方法"></a>2.3Math类的常用方法</h3><table>
-<thead>
-<tr>
-<th align="left">方法名</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">public static int abs (int a)</td>
-<td align="left">返回参数的绝对值</td>
-</tr>
-<tr>
-<td align="left">public static double ceil(double a)</td>
-<td align="left">向上取整(ceil越来越高)</td>
-</tr>
-<tr>
-<td align="left">public static double floor(double a)</td>
-<td align="left">向下取整(floor越来越低)</td>
-</tr>
-<tr>
-<td align="left">public static int round(float a)</td>
-<td align="left">四舍五入</td>
-</tr>
-<tr>
-<td align="left">public static int max(int a,int b)</td>
-<td align="left">求最大值</td>
-</tr>
-<tr>
-<td align="left">public static int min(int a,int b)</td>
-<td align="left">求最小值</td>
-</tr>
-<tr>
-<td align="left">public static double pow(double a,double b)</td>
-<td align="left">求a的b次幂</td>
-</tr>
-<tr>
-<td align="left">public static double random()</td>
-<td align="left">返回一个随机数[0.0,1.0)</td>
-</tr>
-</tbody></table>
-<h2 id="3-System类的常用方法"><a href="#3-System类的常用方法" class="headerlink" title="3.System类的常用方法"></a>3.System类的常用方法</h2><table>
+</li>
+<li><p>File类的构造方法</p>
+<table>
 <thead>
 <tr>
 <th>方法名</th>
@@ -214,19 +178,31 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>public static void exit(int status)</td>
-<td>终止当前运行的java虚拟机，非零表示异常终止</td>
+<td>File(String   pathname)</td>
+<td>通过将给定的路径名字符串转换为抽象路径名来创建新的 File实例</td>
 </tr>
 <tr>
-<td>public static long currentTimeMillis()</td>
-<td>返回当前时间距离元时间经过了多少毫秒</td>
+<td>File(String   parent, String child)</td>
+<td>从父路径名字符串和子路径名字符串创建新的   File实例</td>
 </tr>
 <tr>
-<td>public static void arraycopy(src,srcPos,dest,destPos,length)</td>
-<td>将指定源数组中的数组从指定位置复制到目标数组的指定位置</td>
+<td>File(File   parent, String child)</td>
+<td>从父抽象路径名和子路径名字符串创建新的   File实例</td>
 </tr>
 </tbody></table>
-<h2 id="4-Objects类的常用方法"><a href="#4-Objects类的常用方法" class="headerlink" title="4.Objects类的常用方法"></a>4.Objects类的常用方法</h2><table>
+</li>
+</ul>
+<h3 id="1-2绝对路径和相对路径"><a href="#1-2绝对路径和相对路径" class="headerlink" title="1.2绝对路径和相对路径"></a>1.2绝对路径和相对路径</h3><ul>
+<li><p>绝对路径</p>
+<p>是一个完整的路径，从盘符开始</p>
+</li>
+<li><p>相对路径</p>
+<p>是一个简化的路径，相对当前项目下的路径</p>
+</li>
+</ul>
+<h3 id="1-3File类创建功能"><a href="#1-3File类创建功能" class="headerlink" title="1.3File类创建功能"></a>1.3File类创建功能</h3><ul>
+<li><p>方法分类</p>
+<table>
 <thead>
 <tr>
 <th>方法名</th>
@@ -234,25 +210,146 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>public static String toString(对象)</td>
-<td>返回参数中对象的字符串表示形式。</td>
+<td>public boolean createNewFile()</td>
+<td>当具有该名称的文件不存在时，创建一个由该抽象路径名命名的新空文件</td>
 </tr>
 <tr>
-<td>public static String toString(对象, 默认字符串)</td>
-<td>返回对象的字符串表示形式。(如果对象为空，则返回默认字符串)</td>
+<td>public boolean mkdir()</td>
+<td>创建由此抽象路径名命名的目录</td>
 </tr>
 <tr>
-<td>public static Boolean isNull(对象)</td>
-<td>判断对象是否为空</td>
-</tr>
-<tr>
-<td>public static Boolean nonNull(对象)</td>
-<td>判断对象是否不为空</td>
+<td>public boolean mkdirs()</td>
+<td>创建由此抽象路径名命名的目录，包括任何必需但不存在的父目录</td>
 </tr>
 </tbody></table>
-<h2 id="5-BigDecimal"><a href="#5-BigDecimal" class="headerlink" title="5.BigDecimal"></a>5.BigDecimal</h2><ul>
-<li><p>作用</p>
-<p>可以用来进行精确计算</p>
+</li>
+</ul>
+<h3 id="1-4File类删除功能"><a href="#1-4File类删除功能" class="headerlink" title="1.4File类删除功能"></a>1.4File类删除功能</h3><ul>
+<li><p>方法分类</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public boolean   delete()</td>
+<td>删除由此抽象路径名表示的文件或目录</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="1-5File类判断和获取功能"><a href="#1-5File类判断和获取功能" class="headerlink" title="1.5File类判断和获取功能"></a>1.5File类判断和获取功能</h3><ul>
+<li><p>判断功能</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public   boolean isDirectory()</td>
+<td>测试此抽象路径名表示的File是否为目录</td>
+</tr>
+<tr>
+<td>public   boolean isFile()</td>
+<td>测试此抽象路径名表示的File是否为文件</td>
+</tr>
+<tr>
+<td>public   boolean   exists()</td>
+<td>测试此抽象路径名表示的File是否存在</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>获取功能</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public   String getAbsolutePath()</td>
+<td>返回此抽象路径名的绝对路径名字符串</td>
+</tr>
+<tr>
+<td>public   String getPath()</td>
+<td>将此抽象路径名转换为路径名字符串</td>
+</tr>
+<tr>
+<td>public   String getName()</td>
+<td>返回由此抽象路径名表示的文件或目录的名称</td>
+</tr>
+<tr>
+<td>public   File[] listFiles()</td>
+<td>返回此抽象路径名表示的目录中的文件和目录的File对象数组</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h2 id="2-字节流"><a href="#2-字节流" class="headerlink" title="2.字节流"></a>2.字节流</h2><h3 id="2-1IO流概述和分类"><a href="#2-1IO流概述和分类" class="headerlink" title="2.1IO流概述和分类"></a>2.1IO流概述和分类</h3><ul>
+<li><p>IO流介绍</p>
+<ul>
+<li>IO：输入/输出(Input/Output)</li>
+<li>流：是一种抽象概念，是对数据传输的总称，也就是说数据在设备间的传输称为流，流的本质是数据传输</li>
+<li>IO流就是用来处理设备间数据传输问题的，常见的应用：文件复制；文件上传；文件下载</li>
+</ul>
+</li>
+<li><p>IO流的分类</p>
+<ul>
+<li><p>按照数据的流向</p>
+<ul>
+<li>输入流：读数据</li>
+<li>输出流：写数据</li>
+</ul>
+</li>
+<li><p>按照数据类型来分</p>
+<ul>
+<li>字节流<ul>
+<li>字节输入流</li>
+<li>字节输出流</li>
+</ul>
+</li>
+<li>字符流<ul>
+<li>字符输入流</li>
+<li>字符输出流</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>IO流的使用场景</p>
+<ul>
+<li>如果操作的是纯文本文件，优先使用字符流</li>
+<li>如果操作的是图片、视频、音频等二进制文件，优先使用字节流</li>
+<li>如果不确定文件类型，优先使用字节流，字节流是万能的流</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-2字节流读数据"><a href="#2-2字节流读数据" class="headerlink" title="2.2字节流读数据"></a>2.2字节流读数据</h3><ol>
+<li>一次读一个字节数据</li>
+</ol>
+<ul>
+<li><p>示例代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FileInputStreamDemo01</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        <span class="comment">//创建字节输入流对象</span></span><br><span class="line">        <span class="comment">//FileInputStream(String name)</span></span><br><span class="line">        FileInputStream fis = <span class="keyword">new</span> FileInputStream(<span class="string">&quot;myByteStream\\fos.txt&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> by;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">            fis.read()：读数据</span></span><br><span class="line"><span class="comment">            by=fis.read()：把读取到的数据赋值给by</span></span><br><span class="line"><span class="comment">            by != -1：判断读取到的数据是否是-1</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="keyword">while</span> ((by=fis.read())!=-<span class="number">1</span>) &#123;</span><br><span class="line">            System.out.print((<span class="keyword">char</span>)by);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//释放资源</span></span><br><span class="line">        fis.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 2.一次读一个字节数组</p>
+</li>
+<li><p>示例代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FileInputStreamDemo02</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        <span class="comment">//创建字节输入流对象</span></span><br><span class="line">        FileInputStream fis = <span class="keyword">new</span> FileInputStream(<span class="string">&quot;myByteStream\\fos.txt&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">byte</span>[] bys = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>]; <span class="comment">//1024及其整数倍</span></span><br><span class="line">        <span class="keyword">int</span> len;</span><br><span class="line">      	<span class="comment">//循环读取</span></span><br><span class="line">        <span class="keyword">while</span> ((len=fis.read(bys))!=-<span class="number">1</span>) &#123;</span><br><span class="line">            System.out.print(<span class="keyword">new</span> String(bys,<span class="number">0</span>,len));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//释放资源</span></span><br><span class="line">        fis.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="3-字节缓冲流"><a href="#3-字节缓冲流" class="headerlink" title="3.字节缓冲流"></a>3.字节缓冲流</h2><h3 id="3-1字节缓冲流构造方法"><a href="#3-1字节缓冲流构造方法" class="headerlink" title="3.1字节缓冲流构造方法"></a>3.1字节缓冲流构造方法</h3><ul>
+<li><p>字节缓冲流介绍</p>
+<ul>
+<li>BufferOutputStream：该类实现缓冲输出流.通过设置这样的输出流,应用程序可以向底层输出流写入字节,而不必为写入的每个字节导致底层系统的调用</li>
+<li>BufferedInputStream：创建BufferedInputStream将创建一个内部缓冲区数组.当从流中读取或跳过字节时,内部缓冲区将根据需要从所包含的输入流中重新填充,一次很多字节</li>
+</ul>
 </li>
 <li><p>构造方法</p>
 <table>
@@ -263,187 +360,208 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>BigDecimal(double val)</td>
-<td>参数为double</td>
+<td>BufferedOutputStream(OutputStream out)</td>
+<td>创建字节缓冲输出流对象</td>
 </tr>
 <tr>
-<td>BigDecimal(String val)</td>
-<td>参数为String(推荐)</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>常用方法</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public BigDecimal add(另一个BigDecimal对象)</td>
-<td>加法</td>
-</tr>
-<tr>
-<td>public BigDecimal subtract(另一个BigDecimal对象)</td>
-<td>减法</td>
-</tr>
-<tr>
-<td>public BigDecimal multiply(另一个BigDecimal对象)</td>
-<td>乘法</td>
-</tr>
-<tr>
-<td>public BigDecimal divide(另一个BigDecimal对象)</td>
-<td>除法1</td>
-</tr>
-<tr>
-<td>public BigDecimal divide(另一个BigDecimal对象,精确几位,舍入模式)</td>
-<td>除法2</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>总结</p>
-</li>
-</ul>
-<ol>
-<li>BigDecimal是用来进行精确计算的</li>
-<li>创建BigDecimal的对象，构造方法使用参数类型为字符串的。</li>
-<li>四则运算中的除法，如果除不尽请使用divide的三个参数的方法。</li>
-</ol>
-<p>代码示例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">BigDecimal divide = bd1.divide(参与运算的对象,小数点后精确到多少位,舍入模式);</span><br><span class="line">参数<span class="number">1</span> ，表示参与运算的BigDecimal对象。</span><br><span class="line">参数<span class="number">2</span> ，表示小数点后面精确到多少位</span><br><span class="line">参数<span class="number">3</span> ，舍入模式  </span><br><span class="line">  BigDecimal.ROUND_UP  进一法</span><br><span class="line">  BigDecimal.ROUND_FLOOR 去尾法</span><br><span class="line">  BigDecimal.ROUND_HALF_UP 四舍五入</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-包装类"><a href="#6-包装类" class="headerlink" title="6.包装类"></a>6.包装类</h2><h3 id="6-1基本类型包装类"><a href="#6-1基本类型包装类" class="headerlink" title="6.1基本类型包装类"></a>6.1基本类型包装类</h3><ul>
-<li><p>基本类型包装类的作用</p>
-<p>将基本数据类型封装成对象的好处在于可以在对象中定义更多的功能方法操作该数据</p>
-<p>常用的操作之一：用于基本数据类型与字符串之间的转换</p>
-</li>
-<li><p>基本类型对应的包装类</p>
-<table>
-<thead>
-<tr>
-<th>基本数据类型</th>
-<th>包装类</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>byte</td>
-<td>Byte</td>
-</tr>
-<tr>
-<td>short</td>
-<td>Short</td>
-</tr>
-<tr>
-<td>int</td>
-<td>Integer</td>
-</tr>
-<tr>
-<td>long</td>
-<td>Long</td>
-</tr>
-<tr>
-<td>float</td>
-<td>Float</td>
-</tr>
-<tr>
-<td>double</td>
-<td>Double</td>
-</tr>
-<tr>
-<td>char</td>
-<td>Character</td>
-</tr>
-<tr>
-<td>boolean</td>
-<td>Boolean</td>
+<td>BufferedInputStream(InputStream in)</td>
+<td>创建字节缓冲输入流对象</td>
 </tr>
 </tbody></table>
 </li>
 </ul>
-<h3 id="6-2Integer类"><a href="#6-2Integer类" class="headerlink" title="6.2Integer类"></a>6.2Integer类</h3><ul>
-<li><p>Integer类概述</p>
-<p>包装一个对象中的原始类型 int 的值</p>
+<h2 id="4-字符流"><a href="#4-字符流" class="headerlink" title="4.字符流"></a>4.字符流</h2><h3 id="4-1为什么会出现字符流"><a href="#4-1为什么会出现字符流" class="headerlink" title="4.1为什么会出现字符流"></a>4.1为什么会出现字符流</h3><ul>
+<li><p>字符流的介绍</p>
+<p>由于字节流操作中文不是特别的方便，所以java就提供字符流</p>
+<p>字符流=字节流+编码表</p>
 </li>
-<li><p>Integer类构造方法</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public Integer(int   value)</td>
-<td>根据 int 值创建 Integer 对象(过时)</td>
-</tr>
-<tr>
-<td>public Integer(String s)</td>
-<td>根据 String 值创建 Integer 对象(过时)</td>
-</tr>
-<tr>
-<td>public static Integer valueOf(int i)</td>
-<td>返回表示指定的 int 值的 Integer   实例</td>
-</tr>
-<tr>
-<td>public static Integer valueOf(String s)</td>
-<td>返回一个保存指定值的 Integer 对象 String</td>
-</tr>
-</tbody></table>
+<li><p>中文的字节存储方式</p>
+<p>用字节流复制文本文件时，文本文件也会有中文，但是没有问题，原因是最终底层操作会自动进行字节拼接成中文，如何识别是中文的呢？</p>
+<p>汉字在存储的时候，无论选择哪种编码存储，第一个字节是负数</p>
 </li>
 </ul>
-<h3 id="6-3自动拆箱和自动装箱"><a href="#6-3自动拆箱和自动装箱" class="headerlink" title="6.3自动拆箱和自动装箱"></a>6.3自动拆箱和自动装箱</h3><ul>
-<li><p>自动装箱</p>
-<p>把基本数据类型转换为对应的包装类类型</p>
+<h3 id="4-2编码表"><a href="#4-2编码表" class="headerlink" title="4.2编码表"></a>4.2编码表</h3><ul>
+<li><p>什么是字符集</p>
+<p>是一个系统支持的所有字符的集合，包括各国家文字、标点符号、图形符号、数字等，计算机要准确的存储和识别各种字符集符号，就需要进行字符编码，一套字符集必然至少有一套字符编码。常见字符集有ASCII字符集、GBXXX字符集、Unicode字符集等</p>
 </li>
-<li><p>自动拆箱</p>
-<p>把包装类类型转换为对应的基本数据类型</p>
-</li>
-</ul>
-<h3 id="6-4int和String类型的相互转换"><a href="#6-4int和String类型的相互转换" class="headerlink" title="6.4int和String类型的相互转换"></a>6.4int和String类型的相互转换</h3><ul>
-<li><p>int转换成String</p>
+<li><p>常见的字符集</p>
 <ul>
-<li>转换方式<ul>
-<li>方式一：直接在数字后加一个空字符串</li>
-<li>方式二：通过String类静态方法valueOf()</li>
-</ul>
+<li><p>ASCII字符集：</p>
+<p>ASCII：是基于拉丁字母的一套电脑编码系统，用于显示现代英语，主要包括控制字符(回车键、退格、换行键等)和可显示字符(英文大小写字符、阿拉伯数字和西文符号) </p>
+<p>基本的ASCII字符集，使用7位表示一个字符，共128字符。ASCII的扩展字符集使用8位表示一个字符，共256字符，方便支持欧洲常用字符。是一个系统支持的所有字符的集合，包括各国家文字、标点符号、图形符号、数字等</p>
+</li>
+<li><p>GBXXX字符集：</p>
+<p>GBK：最常用的中文码表。是在GB2312标准基础上的扩展规范，使用了双字节编码方案，共收录了21003个汉字，完全兼容GB2312标准，同时支持繁体汉字以及日韩汉字等</p>
+</li>
+<li><p>Unicode字符集</p>
+<p>UTF-8编码：可以用来表示Unicode标准中任意字符，它是电子邮件、网页及其他存储或传送文字的应用 中，优先采用的编码。互联网工程工作小组（IETF）要求所有互联网协议都必须支持UTF-8编码。它使用一至四个字节为每个字符编码</p>
+<p>编码规则： </p>
+<p>  128个US-ASCII字符，只需一个字节编码</p>
+<p>  拉丁文等字符，需要二个字节编码</p>
+<p>  大部分常用字（含中文），使用三个字节编码</p>
+<p>  其他极少使用的Unicode辅助字符，使用四字节编码</p>
 </li>
 </ul>
 </li>
-<li><p>String转换为int</p>
+</ul>
+<h3 id="4-3字符串中的编码解码问题"><a href="#4-3字符串中的编码解码问题" class="headerlink" title="4.3字符串中的编码解码问题"></a>4.3字符串中的编码解码问题</h3><ul>
+<li><p>相关方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte[] getBytes()</td>
+<td>使用平台的默认字符集将该 String编码为一系列字节</td>
+</tr>
+<tr>
+<td>byte[] getBytes(String charsetName)</td>
+<td>使用指定的字符集将该 String编码为一系列字节</td>
+</tr>
+<tr>
+<td>String(byte[] bytes)</td>
+<td>使用平台的默认字符集解码指定的字节数组来创建字符串</td>
+</tr>
+<tr>
+<td>String(byte[] bytes, String charsetName)</td>
+<td>通过指定的字符集解码指定的字节数组来创建字符串</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="4-4字符流写数据"><a href="#4-4字符流写数据" class="headerlink" title="4.4字符流写数据"></a>4.4字符流写数据</h3><ul>
+<li><p>介绍</p>
+<p>writer：用于写入字符流的抽象父类</p>
+<p>FileWriter：用于写入字符流的常用子类</p>
+</li>
+<li><p>构造方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FileWriter(File file)</td>
+<td>根据给定的 File 对象构造一个 FileWriter 对象</td>
+</tr>
+<tr>
+<td>FileWriter(File file, boolean append)</td>
+<td>根据给定的 File 对象构造一个 FileWriter 对象</td>
+</tr>
+<tr>
+<td>FileWriter(String fileName)</td>
+<td>根据给定的文件名构造一个 FileWriter 对象</td>
+</tr>
+<tr>
+<td>FileWriter(String fileName, boolean append)</td>
+<td>根据给定的文件名以及指示是否附加写入数据的 boolean 值来构造 FileWriter 对象</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>成员方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>void   write(int c)</td>
+<td>写一个字符</td>
+</tr>
+<tr>
+<td>void   write(char[] cbuf)</td>
+<td>写入一个字符数组</td>
+</tr>
+<tr>
+<td>void write(char[] cbuf, int off, int len)</td>
+<td>写入字符数组的一部分</td>
+</tr>
+<tr>
+<td>void write(String str)</td>
+<td>写一个字符串</td>
+</tr>
+<tr>
+<td>void write(String str, int off, int len)</td>
+<td>写一个字符串的一部分</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>刷新和关闭的方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>flush()</td>
+<td>刷新流，之后还可以继续写数据</td>
+</tr>
+<tr>
+<td>close()</td>
+<td>关闭流，释放资源，但是在关闭之前会先刷新流。一旦关闭，就不能再写数据</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="5-5字符流读数据"><a href="#5-5字符流读数据" class="headerlink" title="5.5字符流读数据"></a>5.5字符流读数据</h3><ul>
+<li><p>介绍</p>
+<p>Reader：用于读取字符流的抽象父类</p>
+<p>FileReader：用于读取字符流的常用子类</p>
+</li>
+<li><p>构造方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FileReader(File file)</td>
+<td>在给定从中读取数据的 File 的情况下创建一个新 FileReader</td>
+</tr>
+<tr>
+<td>FileReader(String fileName)</td>
+<td>在给定从中读取数据的文件名的情况下创建一个新 FileReader</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>成员方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int read()</td>
+<td>一次读一个字符数据</td>
+</tr>
+<tr>
+<td>int read(char[] cbuf)</td>
+<td>一次读一个字符数组数据</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="5-6字符缓冲流"><a href="#5-6字符缓冲流" class="headerlink" title="5.6字符缓冲流"></a>5.6字符缓冲流</h3><ul>
+<li><p>字符缓冲流介绍</p>
 <ul>
-<li>转换方式<ul>
-<li>方式一：先将字符串数字转成Integer，再调用valueOf()方法</li>
-<li>方式二：通过Integer静态方法parseInt()进行转换</li>
+<li>BufferedWriter：将文本写入字符输出流，缓冲字符，以提供单个字符，数组和字符串的高效写入，可以指定缓冲区大小，或者可以接受默认大小。默认值足够大，可用于大多数用途</li>
+<li>BufferedReader：从字符输入流读取文本，缓冲字符，以提供字符，数组和行的高效读取，可以指定缓冲区大小，或者可以使用默认大小。 默认值足够大，可用于大多数用途</li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-<h2 id="7-递归"><a href="#7-递归" class="headerlink" title="7.递归"></a>7.递归</h2><ul>
-<li>递归的介绍<ul>
-<li>以编程的角度来看，递归指的是方法定义中调用方法本身的现象</li>
-<li>把一个复杂的问题层层转化为一个与原问题相似的规模较小的问题来求解</li>
-<li>递归策略只需少量的程序就可描述出解题过程所需要的多次重复计算</li>
-</ul>
-</li>
-<li>递归的注意事项<ul>
-<li>递归一定要有出口。否则内存溢出</li>
-<li>递归虽然有出口，但是递归的次数也不宜过多。否则内存溢出</li>
-</ul>
-</li>
-</ul>
-<h2 id="8-jdk8之前的时间日期类"><a href="#8-jdk8之前的时间日期类" class="headerlink" title="8.jdk8之前的时间日期类"></a>8.jdk8之前的时间日期类</h2><h3 id="8-1Date类"><a href="#8-1Date类" class="headerlink" title="8.1Date类"></a>8.1Date类</h3><ul>
-<li><p>计算机中时间原点</p>
-<p>1970年1月1日00:00:00</p>
-</li>
-<li><p>时间换算单位</p>
-<p>1秒=1000毫秒</p>
-</li>
-<li><p>Date类概述</p>
-<p>Date代表了一个特定的时间，精确到毫秒</p>
-</li>
-<li><p>Date类的构造方法</p>
+<li><p>构造方法</p>
 <table>
 <thead>
 <tr>
@@ -452,39 +570,19 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>public Date()</td>
-<td>分配一个 Date对象，并初始化，以便它代表它被分配的时间，精确到毫秒</td>
+<td>BufferedWriter(Writer out)</td>
+<td>创建字符缓冲输出流对象</td>
 </tr>
 <tr>
-<td>public Date(long date)</td>
-<td>分配一个 Date对象，并将其初始化为表示从标准基准时间起指定的毫秒数</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>Date类常用方法</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public long getTime()</td>
-<td>获取的是日期对象从1970年1月1日 00:00:00到现在的毫秒值</td>
-</tr>
-<tr>
-<td>public void setTime(long time)</td>
-<td>设置时间，给的是毫秒值</td>
+<td>BufferedReader(Reader in)</td>
+<td>创建字符缓冲输入流对象</td>
 </tr>
 </tbody></table>
 </li>
 </ul>
-<h3 id="8-2SimpleDateFormat类"><a href="#8-2SimpleDateFormat类" class="headerlink" title="8.2SimpleDateFormat类"></a>8.2SimpleDateFormat类</h3><ul>
-<li><p>SimpleDateFormat类概述</p>
-<p>SimpleDateFormat是一个具体的类，用于以区域设置敏感的方式格式化和解析日期。</p>
-</li>
-<li><p>SimpleDateFormat类构造方法</p>
+<h3 id="5-7字符缓冲流特有功能"><a href="#5-7字符缓冲流特有功能" class="headerlink" title="5.7字符缓冲流特有功能"></a>5.7字符缓冲流特有功能</h3><ul>
+<li><p>方法介绍</p>
+<p>BufferedWriter：</p>
 <table>
 <thead>
 <tr>
@@ -493,35 +591,79 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>public   SimpleDateFormat()</td>
-<td>构造一个SimpleDateFormat，使用默认模式和日期格式</td>
+<td>void newLine()</td>
+<td>写一行行分隔符，行分隔符字符串由系统属性定义</td>
 </tr>
+</tbody></table>
+<p>BufferedReader：</p>
+<table>
+<thead>
 <tr>
-<td>public SimpleDateFormat(String pattern)</td>
-<td>构造一个SimpleDateFormat使用给定的模式和默认的日期格式</td>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>String readLine()</td>
+<td>读一行文字。 结果包含行的内容的字符串，不包括任何行终止字符如果流的结尾已经到达，则为null</td>
 </tr>
 </tbody></table>
 </li>
-<li><p>SimpleDateFormat类的常用方法</p>
+</ul>
+<h3 id="5-8IO流小结"><a href="#5-8IO流小结" class="headerlink" title="5.8IO流小结"></a>5.8IO流小结</h3><p><img src="E:\blog\source_posts\img\01_IO流小结.png"></p>
+<h2 id="4-转换流"><a href="#4-转换流" class="headerlink" title="4.转换流"></a>4.转换流</h2><h3 id="4-1字符流中和编码解码问题相关的两个类"><a href="#4-1字符流中和编码解码问题相关的两个类" class="headerlink" title="4.1字符流中和编码解码问题相关的两个类"></a>4.1字符流中和编码解码问题相关的两个类</h3><ul>
+<li><p>InputStreamReader：是从字节流到字符流的桥梁,父类是Reader</p>
+<p>​    它读取字节，并使用指定的编码将其解码为字符</p>
+<p>​    它使用的字符集可以由名称指定，也可以被明确指定，或者可以接受平台的默认字符集</p>
+</li>
+<li><p>OutputStreamWriter：是从字符流到字节流的桥梁,父类是Writer</p>
+<p>​    是从字符流到字节流的桥梁，使用指定的编码将写入的字符编码为字节</p>
+<p>​    它使用的字符集可以由名称指定，也可以被明确指定，或者可以接受平台的默认字符集</p>
+</li>
+</ul>
+<h3 id="4-2转换流读写数据"><a href="#4-2转换流读写数据" class="headerlink" title="4.2转换流读写数据"></a>4.2转换流读写数据</h3><ul>
+<li><p>构造方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>InputStreamReader(InputStream in)</td>
+<td>使用默认字符编码创建InputStreamReader对象</td>
+</tr>
+<tr>
+<td>InputStreamReader(InputStream in,String chatset)</td>
+<td>使用指定的字符编码创建InputStreamReader对象</td>
+</tr>
+<tr>
+<td>OutputStreamWriter(OutputStream out)</td>
+<td>使用默认字符编码创建OutputStreamWriter对象</td>
+</tr>
+<tr>
+<td>OutputStreamWriter(OutputStream out,String charset)</td>
+<td>使用指定的字符编码创建OutputStreamWriter对象</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h2 id="5-对象操作流"><a href="#5-对象操作流" class="headerlink" title="5.对象操作流"></a>5.对象操作流</h2><h3 id="5-1对象序列化流"><a href="#5-1对象序列化流" class="headerlink" title="5.1对象序列化流"></a>5.1对象序列化流</h3><ul>
+<li><p>对象序列化介绍</p>
 <ul>
-<li>格式化(从Date到String)<ul>
-<li>public final String format(Date date)：将日期格式化成日期/时间字符串</li>
+<li>对象序列化：就是将对象保存到磁盘中，或者在网络中传输对象</li>
+<li>这种机制就是使用一个字节序列表示一个对象，该字节序列包含：对象的类型、对象的数据和对象中存储的属性等信息</li>
+<li>字节序列写到文件之后，相当于文件中持久保存了一个对象的信息</li>
+<li>反之，该字节序列还可以从文件中读取回来，重构对象，对它进行反序列化</li>
 </ul>
 </li>
-<li>解析(从String到Date)<ul>
-<li>public Date parse(String source)：从给定字符串的开始解析文本以生成日期</li>
+<li><p>对象序列化流：ObjectOutputStream</p>
+<ul>
+<li>将Java对象的原始数据类型和图形写入OutputStream。 可以使用ObjectInputStream读取（重构）对象。 可以通过使用流的文件来实现对象的持久存储。 如果流是网络套接字流，则可以在另一个主机上或另一个进程中重构对象 </li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-<h2 id="9-jdk8之后的时间日期类"><a href="#9-jdk8之后的时间日期类" class="headerlink" title="9.jdk8之后的时间日期类"></a>9.jdk8之后的时间日期类</h2><h3 id="9-1jdk8新增日期类"><a href="#9-1jdk8新增日期类" class="headerlink" title="9.1jdk8新增日期类"></a>9.1jdk8新增日期类</h3><ul>
-<li>LocalDate    表示日期（年月日）</li>
-<li>LocalTime    表示时间（时分秒）</li>
-<li>LocalDateTime    表示时间+日期（年月日时分秒）</li>
-</ul>
-<h3 id="9-2LocalDateTime创建方法"><a href="#9-2LocalDateTime创建方法" class="headerlink" title="9.2LocalDateTime创建方法"></a>9.2LocalDateTime创建方法</h3><ul>
-<li><p>方法说明</p>
+<li><p>构造方法</p>
 <table>
 <thead>
 <tr>
@@ -530,18 +672,103 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>public static LocalDateTime now()</td>
-<td>获取当前系统时间</td>
+<td>ObjectOutputStream(OutputStream out)</td>
+<td>创建一个写入指定的OutputStream的ObjectOutputStream</td>
 </tr>
+</tbody></table>
+</li>
+<li><p>序列化对象的方法</p>
+<table>
+<thead>
 <tr>
-<td>public static LocalDateTime of  (年, 月 , 日, 时, 分, 秒)</td>
-<td>使用指定年月日和时分秒初始化一个LocalDateTime对象</td>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>void writeObject(Object obj)</td>
+<td>将指定的对象写入ObjectOutputStream</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>注意事项</p>
+<ul>
+<li>一个对象要想被序列化，该对象所属的类必须必须实现Serializable 接口</li>
+<li>Serializable是一个标记接口，实现该接口，不需要重写任何方法</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-2对象反序列化流"><a href="#5-2对象反序列化流" class="headerlink" title="5.2对象反序列化流"></a>5.2对象反序列化流</h3><ul>
+<li><p>对象反序列化流： ObjectInputStream</p>
+<ul>
+<li>ObjectInputStream反序列化先前使用ObjectOutputStream编写的原始数据和对象</li>
+</ul>
+</li>
+<li><p>构造方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ObjectInputStream(InputStream in)</td>
+<td>创建从指定的InputStream读取的ObjectInputStream</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>反序列化对象的方法</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Object readObject()</td>
+<td>从ObjectInputStream读取一个对象</td>
 </tr>
 </tbody></table>
 </li>
 </ul>
-<h3 id="9-3LocalDateTime获取方法"><a href="#9-3LocalDateTime获取方法" class="headerlink" title="9.3LocalDateTime获取方法"></a>9.3LocalDateTime获取方法</h3><ul>
-<li><p>方法说明</p>
+<h3 id="5-3serialVersionUID-amp-transient"><a href="#5-3serialVersionUID-amp-transient" class="headerlink" title="5.3serialVersionUID&amp;transient"></a>5.3serialVersionUID&amp;transient</h3><ul>
+<li><p>serialVersionUID</p>
+<ul>
+<li>用对象序列化流序列化了一个对象后，假如我们修改了对象所属的类文件，读取数据会不会出问题呢？<ul>
+<li>会出问题，会抛出InvalidClassException异常</li>
+</ul>
+</li>
+<li>如果出问题了，如何解决呢？<ul>
+<li>重新序列化</li>
+<li>给对象所属的类加一个serialVersionUID <ul>
+<li>private static final long serialVersionUID = 42L;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>transient</p>
+<ul>
+<li>如果一个对象中的某个成员变量的值不想被序列化，又该如何实现呢？<ul>
+<li>给该成员变量加transient关键字修饰，该关键字标记的成员变量不参与序列化过程</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-Properties集合"><a href="#6-Properties集合" class="headerlink" title="6.Properties集合"></a>6.Properties集合</h2><h3 id="6-1Properties作为Map集合的使用"><a href="#6-1Properties作为Map集合的使用" class="headerlink" title="6.1Properties作为Map集合的使用"></a>6.1Properties作为Map集合的使用</h3><ul>
+<li>Properties介绍<ul>
+<li>是一个Map体系的集合类</li>
+<li>Properties可以保存到流中或从流中加载</li>
+<li>属性列表中的每个键及其对应的值都是一个字符串</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-2Properties作为Map集合的特有方法"><a href="#6-2Properties作为Map集合的特有方法" class="headerlink" title="6.2Properties作为Map集合的特有方法"></a>6.2Properties作为Map集合的特有方法</h3><ul>
+<li><p>特有方法</p>
 <table>
 <thead>
 <tr>
@@ -550,38 +777,22 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>public int getYear()</td>
-<td>获取年</td>
+<td>Object   setProperty(String key, String value)</td>
+<td>设置集合的键和值，都是String类型，底层调用   Hashtable方法 put</td>
 </tr>
 <tr>
-<td>public int getMonthValue()</td>
-<td>获取月份（1-12）</td>
+<td>String   getProperty(String key)</td>
+<td>使用此属性列表中指定的键搜索属性</td>
 </tr>
 <tr>
-<td>public int getDayOfMonth()</td>
-<td>获取月份中的第几天（1-31）</td>
-</tr>
-<tr>
-<td>public int getDayOfYear()</td>
-<td>获取一年中的第几天（1-366）</td>
-</tr>
-<tr>
-<td>public DayOfWeek getDayOfWeek()</td>
-<td>获取星期</td>
-</tr>
-<tr>
-<td>public int getMinute()</td>
-<td>获取分钟</td>
-</tr>
-<tr>
-<td>public int getHour()</td>
-<td>获取小时</td>
+<td>Set<String>   stringPropertyNames()</td>
+<td>从该属性列表中返回一个不可修改的键集，其中键及其对应的值是字符串</td>
 </tr>
 </tbody></table>
 </li>
 </ul>
-<h3 id="9-4LocalDateTime转换方法"><a href="#9-4LocalDateTime转换方法" class="headerlink" title="9.4LocalDateTime转换方法"></a>9.4LocalDateTime转换方法</h3><ul>
-<li><p>方法说明</p>
+<h3 id="6-3Properties和IO流相结合的方法"><a href="#6-3Properties和IO流相结合的方法" class="headerlink" title="6.3Properties和IO流相结合的方法"></a>6.3Properties和IO流相结合的方法</h3><ul>
+<li><p>和IO流相结合的方法</p>
 <table>
 <thead>
 <tr>
@@ -590,227 +801,17 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>public LocalDate  toLocalDate ()</td>
-<td>转换成为一个LocalDate对象</td>
+<td>void   load(Reader reader)</td>
+<td>从输入字符流读取属性列表（键和元素对）</td>
 </tr>
 <tr>
-<td>public LocalTime toLocalTime ()</td>
-<td>转换成为一个LocalTime对象</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h3 id="9-5LocalDateTime格式化和解析"><a href="#9-5LocalDateTime格式化和解析" class="headerlink" title="9.5LocalDateTime格式化和解析"></a>9.5LocalDateTime格式化和解析</h3><ul>
-<li><p>方法说明</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public String format (指定格式)</td>
-<td>把一个LocalDateTime格式化成为一个字符串</td>
-</tr>
-<tr>
-<td>public LocalDateTime parse (准备解析的字符串, 解析格式)</td>
-<td>把一个日期字符串解析成为一个LocalDateTime对象</td>
-</tr>
-<tr>
-<td>public static DateTimeFormatter ofPattern(String pattern)</td>
-<td>使用指定的日期模板获取一个日期格式化器DateTimeFormatter对象</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h3 id="9-6LocalDateTime增加或者减少时间的方法"><a href="#9-6LocalDateTime增加或者减少时间的方法" class="headerlink" title="9.6LocalDateTime增加或者减少时间的方法"></a>9.6LocalDateTime增加或者减少时间的方法</h3><ul>
-<li><p>方法说明</p>
-<p>①</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public LocalDateTime plusYears (long years)</td>
-<td>添加或者减去年</td>
-</tr>
-<tr>
-<td>public LocalDateTime plusMonths(long months)</td>
-<td>添加或者减去月</td>
-</tr>
-<tr>
-<td>public LocalDateTime plusDays(long days)</td>
-<td>添加或者减去日</td>
-</tr>
-<tr>
-<td>public LocalDateTime plusHours(long hours)</td>
-<td>添加或者减去时</td>
-</tr>
-<tr>
-<td>public LocalDateTime plusMinutes(long minutes)</td>
-<td>添加或者减去分</td>
-</tr>
-<tr>
-<td>public LocalDateTime plusSeconds(long seconds)</td>
-<td>添加或者减去秒</td>
-</tr>
-<tr>
-<td>public LocalDateTime plusWeeks(long weeks)</td>
-<td>添加或者减去周</td>
-</tr>
-</tbody></table>
-<p>②</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public LocalDateTime  minusYears (long years)</td>
-<td>减去或者添加年</td>
-</tr>
-<tr>
-<td>public LocalDateTime  minusMonths(long months)</td>
-<td>减去或者添加月</td>
-</tr>
-<tr>
-<td>public LocalDateTime minusDays(long days)</td>
-<td>减去或者添加日</td>
-</tr>
-<tr>
-<td>public LocalDateTime minusHours(long hours)</td>
-<td>减去或者添加时</td>
-</tr>
-<tr>
-<td>public LocalDateTime minusMinutes(long minutes)</td>
-<td>减去或者添加分</td>
-</tr>
-<tr>
-<td>public LocalDateTime minusSeconds(long seconds)</td>
-<td>减去或者添加秒</td>
-</tr>
-<tr>
-<td>public LocalDateTime minusWeeks(long weeks)</td>
-<td>减去或者添加周</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h3 id="9-7LocalDateTime修改方法"><a href="#9-7LocalDateTime修改方法" class="headerlink" title="9.7LocalDateTime修改方法"></a>9.7LocalDateTime修改方法</h3><ul>
-<li><p>方法说明</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public LocalDateTime withYear(int year)</td>
-<td>直接修改年</td>
-</tr>
-<tr>
-<td>public LocalDateTime withMonth(int month)</td>
-<td>直接修改月</td>
-</tr>
-<tr>
-<td>public LocalDateTime withDayOfMonth(int dayofmonth)</td>
-<td>直接修改日期(一个月中的第几天)</td>
-</tr>
-<tr>
-<td>public LocalDateTime withDayOfYear(int dayOfYear)</td>
-<td>直接修改日期(一年中的第几天)</td>
-</tr>
-<tr>
-<td>public LocalDateTime withHour(int hour)</td>
-<td>直接修改小时</td>
-</tr>
-<tr>
-<td>public LocalDateTime withMinute(int minute)</td>
-<td>直接修改分钟</td>
-</tr>
-<tr>
-<td>public LocalDateTime withSecond(int second)</td>
-<td>直接修改秒</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h3 id="9-8Period"><a href="#9-8Period" class="headerlink" title="9.8Period"></a>9.8Period</h3><ul>
-<li><p>方法说明</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public static Period between(开始时间,结束时间)</td>
-<td>计算两个“时间”的间隔</td>
-</tr>
-<tr>
-<td>public int getYears()</td>
-<td>获得这段时间的年数</td>
-</tr>
-<tr>
-<td>public int getMonths()</td>
-<td>获得此期间的总月数</td>
-</tr>
-<tr>
-<td>public int getDays()</td>
-<td>获得此期间的天数</td>
-</tr>
-<tr>
-<td>public long toTotalMonths()</td>
-<td>获取此期间的总月数</td>
+<td>void   store(Writer writer, String comments)</td>
+<td>将此属性列表（键和元素对）写入此   Properties表中，以适合使用   load(Reader)方法的格式写入输出字符流</td>
 </tr>
 </tbody></table>
 </li>
 <li><p>示例代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  计算两个时间的间隔</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JDK8DateDemo9</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//public static Period between(开始时间,结束时间)  计算两个&quot;时间&quot;的间隔</span></span><br><span class="line"></span><br><span class="line">        LocalDate localDate1 = LocalDate.of(<span class="number">2020</span>, <span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line">        LocalDate localDate2 = LocalDate.of(<span class="number">2048</span>, <span class="number">12</span>, <span class="number">12</span>);</span><br><span class="line">        Period period = Period.between(localDate1, localDate2);</span><br><span class="line">        System.out.println(period);<span class="comment">//P28Y11M11D</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//public int getYears()         获得这段时间的年数</span></span><br><span class="line">        System.out.println(period.getYears());<span class="comment">//28</span></span><br><span class="line">        <span class="comment">//public int getMonths()        获得此期间的月数</span></span><br><span class="line">        System.out.println(period.getMonths());<span class="comment">//11</span></span><br><span class="line">        <span class="comment">//public int getDays()          获得此期间的天数</span></span><br><span class="line">        System.out.println(period.getDays());<span class="comment">//11</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//public long toTotalMonths()   获取此期间的总月数</span></span><br><span class="line">        System.out.println(period.toTotalMonths());<span class="comment">//347</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ul>
-<h3 id="9-9Duration"><a href="#9-9Duration" class="headerlink" title="9.9Duration"></a>9.9Duration</h3><ul>
-<li><p>方法说明</p>
-<table>
-<thead>
-<tr>
-<th>方法名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>public static Duration  between(开始时间,结束时间)</td>
-<td>计算两个“时间”的间隔</td>
-</tr>
-<tr>
-<td>public long toSeconds()</td>
-<td>获得此时间间隔的秒</td>
-</tr>
-<tr>
-<td>public int toMillis()</td>
-<td>获得此时间间隔的毫秒</td>
-</tr>
-<tr>
-<td>public int toNanos()</td>
-<td>获得此时间间隔的纳秒</td>
-</tr>
-</tbody></table>
-</li>
-<li><p>示例代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  计算两个时间的间隔</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JDK8DateDemo10</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//public static Duration between(开始时间,结束时间)  计算两个“时间&quot;的间隔</span></span><br><span class="line"></span><br><span class="line">        LocalDateTime localDateTime1 = LocalDateTime.of(<span class="number">2020</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">15</span>);</span><br><span class="line">        LocalDateTime localDateTime2 = LocalDateTime.of(<span class="number">2020</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>);</span><br><span class="line">        Duration duration = Duration.between(localDateTime1, localDateTime2);</span><br><span class="line">        System.out.println(duration);<span class="comment">//PT21H57M58S</span></span><br><span class="line">        <span class="comment">//public long toSeconds()	       获得此时间间隔的秒</span></span><br><span class="line">        System.out.println(duration.toSeconds());<span class="comment">//79078</span></span><br><span class="line">        <span class="comment">//public int toMillis()	           获得此时间间隔的毫秒</span></span><br><span class="line">        System.out.println(duration.toMillis());<span class="comment">//79078000</span></span><br><span class="line">        <span class="comment">//public int toNanos()             获得此时间间隔的纳秒</span></span><br><span class="line">        System.out.println(duration.toNanos());<span class="comment">//79078000000000</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PropertiesDemo03</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        <span class="comment">//把集合中的数据保存到文件</span></span><br><span class="line"><span class="comment">//        myStore();</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//把文件中的数据加载到集合</span></span><br><span class="line">        myLoad();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">myLoad</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        Properties prop = <span class="keyword">new</span> Properties();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//void load(Reader reader)：</span></span><br><span class="line">        FileReader fr = <span class="keyword">new</span> FileReader(<span class="string">&quot;myOtherStream\\fw.txt&quot;</span>);</span><br><span class="line">        prop.load(fr);</span><br><span class="line">        fr.close();</span><br><span class="line"></span><br><span class="line">        System.out.println(prop);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">myStore</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        Properties prop = <span class="keyword">new</span> Properties();</span><br><span class="line"></span><br><span class="line">        prop.setProperty(<span class="string">&quot;itheima001&quot;</span>,<span class="string">&quot;佟丽娅&quot;</span>);</span><br><span class="line">        prop.setProperty(<span class="string">&quot;itheima002&quot;</span>,<span class="string">&quot;赵丽颖&quot;</span>);</span><br><span class="line">        prop.setProperty(<span class="string">&quot;itheima003&quot;</span>,<span class="string">&quot;刘诗诗&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//void store(Writer writer, String comments)：</span></span><br><span class="line">        FileWriter fw = <span class="keyword">new</span> FileWriter(<span class="string">&quot;myOtherStream\\fw.txt&quot;</span>);</span><br><span class="line">        prop.store(fw,<span class="keyword">null</span>);</span><br><span class="line">        fw.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -893,7 +894,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/01/01%E5%B8%B8%E7%94%A8API/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/09/03/03IO%E6%B5%81/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -907,17 +908,8 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/09/01/02%E9%9B%86%E5%90%88/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/09/01/04%E5%A4%9A%E7%BA%BF%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/09/01/02%E9%9B%86%E5%90%88/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
